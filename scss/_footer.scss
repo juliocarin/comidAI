@@ -1,0 +1,15 @@
+.footer{
+    background-color: grey;
+    font-family: 'Comfortaa', cursive;
+    padding: 30px;
+    justify-content: space-around;
+        &_contenido{
+        color: white;
+        text-decoration: none;
+        div a{
+            color: white;
+        }
+
+    }
+
+}

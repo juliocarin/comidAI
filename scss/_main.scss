@@ -1,0 +1,111 @@
+.testimonio{
+    background-color: $fondo;
+    font-family: 'Comfortaa', cursive;
+    height: 100%;
+    padding: 100px;
+    div{
+        text-align: center;
+        .radio{
+            border-radius: 10%;
+        }
+    }
+}
+.contacto{
+    background-color: $fondo_contacto;
+    padding: 90px;
+    &_texto{
+        color: rgb(100, 116, 100);
+        font-family: 'Comfortaa',cursive;
+        text-align: center;
+        letter-spacing: 10px;
+        word-spacing: 60px;
+        font-size: 50px;
+        }
+    &_formulario{
+        padding: 20px;
+    }
+}
+
+.acerca{
+    background-color: $fondo;
+    text-align: center;
+    display: flex;
+    padding: 40px;
+    &__titulo{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive;
+    color: seagreen
+    }
+    &__texto{
+        margin: 30px;
+        font-size: 18px;
+        color: navy;
+        line-height: 1.6;
+        font-family: 'Baloo 2', cursive;
+    }
+    &__foto{
+        margin: 30px;
+    }
+}
+.receta{
+    background-color: $fondo;
+    padding: 40px;
+    &__titulo{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: seagreen;
+    }
+    &__lista{
+        list-style-image: url("../img/li_icon.png");
+        margin: 30px;
+        list-style-position: inside;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: 'Comfortaa';
+    }
+    &__lista2{
+        margin-bottom: 30px;
+        list-style-image: url("../img/li_icon_2.png");
+        list-style-position: inside;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        font-family: 'Comfortaa';
+    }
+}
+
+.padre{
+    display: grid;
+    grid-template-columns: repeat(3, 1 fr);
+    grid-template-areas: 
+    "costa sierra selva"
+}
+@mixin regiones($region){
+        grid-area: $region;
+}
+
+.hijo{
+    padding: 100px;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    @each $region in costa, sierra, selva {
+        &__#{$region}{
+            @include regiones($region);
+            background-color:$fondo_receta;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        color:white;
+        &:hover{
+            color:rgb(74, 74, 74);
+        }
+    }
+}

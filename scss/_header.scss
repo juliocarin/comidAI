@@ -1,0 +1,20 @@
+.menuheader{
+    background-color: grey;
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+    display:flex;
+    justify-content: space-around;
+    .nav_header{
+        display: inline-block;
+        text-align: center;
+         &__li{
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 40px;
+            &:hover{
+                background-color: rgb(73, 72, 72);
+            }
+        }
+    } 
+} 

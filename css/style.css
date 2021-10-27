@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menuheader {
+  background-color: grey;
+  font-size: 25px;
+  font-family: 'Comfortaa', cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menuheader .nav_header {
+  display: inline-block;
+  text-align: center;
+}
+
+.menuheader .nav_header__li {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 40px;
+}
+
+.menuheader .nav_header__li:hover {
+  background-color: #494848;
+}
+
+.testimonio {
+  background-color: #f3e2be;
+  font-family: 'Comfortaa', cursive;
+  height: 100%;
+  padding: 100px;
+}
+
+.testimonio div {
+  text-align: center;
+}
+
+.testimonio div .radio {
+  border-radius: 10%;
+}
+
+.contacto {
+  background-color: #e3d1b8;
+  padding: 90px;
+}
+
+.contacto_texto {
+  color: #647464;
+  font-family: 'Comfortaa',cursive;
+  text-align: center;
+  letter-spacing: 10px;
+  word-spacing: 60px;
+  font-size: 50px;
+}
+
+.contacto_formulario {
+  padding: 20px;
+}
+
+.acerca {
+  background-color: #f3e2be;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px;
+}
+
+.acerca__titulo {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-family: 'Comfortaa', cursive;
+  color: seagreen;
+}
+
+.acerca__texto {
+  margin: 30px;
+  font-size: 18px;
+  color: navy;
+  line-height: 1.6;
+  font-family: 'Baloo 2', cursive;
+}
+
+.acerca__foto {
+  margin: 30px;
+}
+
+.receta {
+  background-color: #f3e2be;
+  padding: 40px;
+}
+
+.receta__titulo {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  color: seagreen;
+}
+
+.receta__lista {
+  list-style-image: url("../img/li_icon.png");
+  margin: 30px;
+  list-style-position: inside;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: 'Comfortaa';
+}
+
+.receta__lista2 {
+  margin-bottom: 30px;
+  list-style-image: url("../img/li_icon_2.png");
+  list-style-position: inside;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  font-family: 'Comfortaa';
+}
+
+.padre {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1 fr)[3];
+      grid-template-columns: repeat(3, 1 fr);
+      grid-template-areas: "costa sierra selva";
+}
+
+.hijo {
+  padding: 100px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hijo__costa {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: costa;
+  background-color: rgba(128, 128, 128, 0.43);
+}
+
+.hijo__sierra {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: sierra;
+  background-color: rgba(128, 128, 128, 0.43);
+}
+
+.hijo__selva {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: selva;
+  background-color: rgba(128, 128, 128, 0.43);
+}
+
+.hijo__link {
+  text-decoration: none;
+  color: white;
+}
+
+.hijo__link:hover {
+  color: #4a4a4a;
+}
+
+.footer {
+  background-color: grey;
+  font-family: 'Comfortaa', cursive;
+  padding: 30px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer_contenido {
+  color: white;
+  text-decoration: none;
+}
+
+.footer_contenido div a {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
